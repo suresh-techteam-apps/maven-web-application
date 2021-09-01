@@ -10,7 +10,7 @@ def mavenHome = tool name: "maven3.6.3"
  git branch: 'development', credentialsId: '0fc2b8fe-0aa8-4d3d-be77-60b219ade16c', url: 'https://github.com/MithunTechnologiesDevOps/maven-web-application.git'
  }
 
- stage('Build')
+ stage('Build now')
  {
  sh "${mavenHome}/bin/mvn clean package"
  }
